@@ -484,12 +484,12 @@ footer {
     }
   
     .image-center-container {
-        height: 60vh; /* Reduce aún más la altura del contenedor en móviles */
+        height: 70vh; /* Reduce aún más la altura del contenedor en móviles */
     }
 
     .img {
-        margin-top: 20px; /* Reduce el margen superior en móviles */
-        max-height: 50%; /* Ajusta la altura máxima de la imagen */
+        margin-top: 50px; /* Reduce el margen superior en móviles */
+        max-height: 80%; /* Ajusta la altura máxima de la imagen */
     }
     
     .carousel-container {

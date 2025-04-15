@@ -30,6 +30,7 @@ header {
     margin: 0; /* Elimina márgenes adicionales */
     padding: 0; /* Elimina padding adicional */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    margin-top: 130px;
 }
 
 .img {
@@ -470,12 +471,12 @@ footer {
     .hero{
     
         padding: 1rem 1rem; /* Reduce el padding en móviles */
-        margin-top: 30px; /* Ajusta el margen superior para móviles */
+        margin-top: 5px; /* Ajusta el margen superior para móviles */
        
     }
     .hero h1 {
         font-size: 1.5rem;
-     
+     margin-top: 10px;
     }
 
     .hero p {
@@ -484,11 +485,11 @@ footer {
     }
   
     .image-center-container {
-        height: 70vh; /* Reduce aún más la altura del contenedor en móviles */
+        height: 60vh; /* Reduce aún más la altura del contenedor en móviles */
     }
 
     .img {
-        margin-top: 50px; /* Reduce el margen superior en móviles */
+        margin-top: 30px; /* Reduce el margen superior en móviles */
         max-height: 80%; /* Ajusta la altura máxima de la imagen */
     }
     

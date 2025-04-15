@@ -22,13 +22,23 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     z-index: 1000;
 }
-.img{
-margin-top: 65px;
-    max-width: 100%; /* La imagen ocupa todo el ancho disponible */
-    height: 550px; /* Mantiene la proporción */
+.image-center-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0; /* Elimina márgenes adicionales */
+    padding: 0; /* Elimina padding adicional */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+    margin-top: 200px;
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto profesional */
-    
+    object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor */
 }
 /* Ícono de WhatsApp */
 .whatsapp-icon {
@@ -418,9 +428,13 @@ footer {
         height: 100px; /* Reduce la altura del contenedor en tablets */
     }
 
+    .image-center-container {
+        height: 80vh; /* Reduce la altura del contenedor en tablets */
+    }
+
     .img {
-        max-width: 95%; /* Aumenta el ancho máximo de la imagen */
-        max-height: 85%; /* Ajusta la altura máxima de la imagen */
+        margin-top: 100px; /* Reduce el margen superior */
+        max-height: 90%; /* Ajusta la altura máxima de la imagen */
     }
 
     .services {
@@ -469,12 +483,15 @@ footer {
        
     }
   
-    .img{
-        max-width: 100%; /* La imagen ocupa todo el ancho disponible */
-      
-        height: 350px; /* Mantiene la proporción */
-        margin-top: 120px;
+    .image-center-container {
+        height: 60vh; /* Reduce aún más la altura del contenedor en móviles */
     }
+
+    .img {
+        margin-top: 20px; /* Reduce el margen superior en móviles */
+        max-height: 50%; /* Ajusta la altura máxima de la imagen */
+    }
+    
     .carousel-container {
         max-width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
        height:200px ;
@@ -491,6 +508,6 @@ footer {
         font-size: 1rem; /* Reduce el tamaño del texto en los botones */
     }
    
-} 
+}
 
     
